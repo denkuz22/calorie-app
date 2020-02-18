@@ -1,6 +1,6 @@
 # Calorie Bud Application
 
-> This is a front end application written with HTML, CSS and JS. (no frameworks included)
+> This is a front end application written in HTML, CSS and JS. (no frameworks included)
 
 # Functionality
 
