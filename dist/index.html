@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Calorie Tracker</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-
-<body>
+  <body>
     <div id="mydiv">
-        <header id="head">
-            Calorie Bud
-            <img class='gif' src="./img/source.gif" alt="">
+      <header id="head">
+        Calorie Bud
+        <img class="gif" src="./img/source.gif" alt="" />
+      </header>
+      <div class="container">
+        <div class="card">
+          <div class="card-title">
+            <h3>Add Your Meal</h3>
+          </div>
 
-        </header>
-        <div class='container'>
-            <div class="card">
-                <div class='card-title'>
-                    <h3>Add Your Meal</h3>
-                </div>
-
-                <div id='myForm' class='flexb'>
-                    <div class="flexb-1">
-                        <label for="item-name">Meal</label>
-                        <input type="text" placeholder="Add Item" id="item-name">
-                    </div>
-                    <div class="flexb-2">
-                        <label for="item-calories">Calories</label>
-                        <input type="number" placeholder="Add Calories" id="item-calories">
-                    </div>
-                </div>
-                <!-- <div class="updateDiv">
+          <div id="myForm" class="flexb">
+            <div class="flexb-1">
+              <label for="item-name">Meal</label>
+              <input type="text" placeholder="Add Item" id="item-name" />
+            </div>
+            <div class="flexb-2">
+              <label for="item-calories">Calories</label>
+              <input
+                type="number"
+                placeholder="Add Calories"
+                id="item-calories"
+              />
+            </div>
+          </div>
+          <!-- <div class="updateDiv">
                         <button class="button-update"><i class="fa fa-pencil"></i> Update</button>
                         <button class="button-delete"><i class="fa fa-trash"></i> Delete</button>
                     </div> -->
-                <div id='buttons-id' class='button-flex'>
-                    <button id='add' class="button-flex-1"><i class="fa fa-plus"></i>
-                        Add
-                        Meal</button>
-                    <!-- <button id='back' class="button-flex-2"><i class="fa fa-chevron-circle-left"></i> -->
-                    <!-- Back</button> -->
-                </div>
-
-
-            </div>
-            <div id='total-cal' class='totalCal'>
-                <span>Total Calories: <span id='span-cal'> 0</span></span>
-            </div>
-
-            <div id='item-div' class='mealItems'>
-            </div>
-            <div class="clear-btn">
-                <button class='clear-all'><i class="fa fa-times-circle"></i> Clear All</button>
-            </div>
-
+          <div id="buttons-id" class="button-flex">
+            <button id="add" class="button-flex-1">
+              <i class="fa fa-plus"></i> Add Meal
+            </button>
+            <!-- <button id='back' class="button-flex-2"><i class="fa fa-chevron-circle-left"></i> -->
+            <!-- Back</button> -->
+          </div>
         </div>
-        <nav id="mynav">
-            <img src="./img/banana.png" alt="">
-        </nav>
+        <div id="total-cal" class="totalCal">
+          <span>Total Calories: <span id="span-cal"> 0</span></span>
+        </div>
 
+        <div id="item-div" class="mealItems"></div>
+        <div class="clear-btn">
+          <button class="clear-all">
+            <i class="fa fa-times-circle"></i> Clear All
+          </button>
+        </div>
+      </div>
+      <nav id="mynav">
+        <img src="./img/banana.png" alt="" />
+      </nav>
     </div>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
